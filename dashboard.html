@@ -11,11 +11,11 @@
   <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-indigo-600">Welcome, <span id="userName"></span> 👋</h1>
+      <h1 class="text-2xl font-bold text-indigo-600">Welcome, <span id="userName"></span> 👋</h1>
 
       <h1 class="text-2xl font-bold text-indigo-600">SmartSpend Dashboard</h1>
       <div class="flex space-x-4 items-center">
-        <span id="welcomeUser" class="text-gray-700 font-medium"></span>
+        <span id="welcomeUser " class="text-gray-700 font-medium"></span>
         <button id="logoutBtn" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition">Logout</button>
       </div>
     </div>
@@ -59,27 +59,28 @@
       <ul id="expenseList" class="space-y-2 text-gray-700"></ul>
     </div>
   </main>
+
   <!-- Charts Section -->
-<div class="mt-10 grid md:grid-cols-2 gap-6">
-  <!-- Expense Categories -->
-  <div class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-xl font-semibold mb-4 text-gray-800">Expenses by Category</h2>
-    <canvas id="categoryChart"></canvas>
-  </div>
+  <div class="mt-10 grid md:grid-cols-2 gap-6 container mx-auto px-6">
+    <!-- Expense Categories -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-semibold mb-4 text-gray-800">Expenses by Category</h2>
+      <canvas id="categoryChart"></canvas>
+    </div>
 
-  <!-- Income vs Expenses -->
-  <div class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-xl font-semibold mb-4 text-gray-800">Income vs Expenses</h2>
-    <canvas id="summaryChart"></canvas>
+    <!-- Income vs Expenses -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-semibold mb-4 text-gray-800">Income vs Expenses</h2>
+      <canvas id="summaryChart"></canvas>
+    </div>
   </div>
-</div>
-
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
+  <footer class="bg-gray-800 text-white py-6 text-center mt-auto">
     <p>&copy; 2023 SmartSpend. All rights reserved.</p>
   </footer>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
