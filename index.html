@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartSpend - Intelligent Expense Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <h1 class="text-2xl font-bold text-indigo-600">SmartSpend</h1>
+      </div>
+      <div class="flex space-x-6">
+        <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="#features" class="text-gray-700 hover:text-indigo-600">Features</a>
+        <a href="dashboard.html" class="text-gray-700 hover:text-indigo-600">Dashboard</a>
+
+        <a href="#how-it-works" class="text-gray-700 hover:text-indigo-600">How It Works</a>
+        <a href="login.html" class="text-gray-700 hover:text-indigo-600">Login</a>
+        <a href="signup.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-4 animate-fadeInUp">
+        Take Control of Your Finances with SmartSpend
+      </h2>
+      <p class="text-xl mb-8 animate-fadeInUp" style="animation-delay: 0.2s;">
+        AI-powered expense tracking and budgeting made simple. Save money, reduce stress, and achieve financial freedom.
+      </p>
+      <a href="signup.html" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 animate-fadeInUp">Get Started Free</a>
+      <div class="mt-8 animate-fadeInUp" style="animation-delay: 0.6s;">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/955baf55-d9bf-44e8-84c4-6602dfb85abd.png" alt="Dashboard" class="rounded-lg shadow-lg mx-auto"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Powerful Features</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="feature-card bg-gray-50 p-6 rounded-lg transition duration-300">
+          <div class="text-4xl mb-4 text-indigo-600">📊</div>
+          <h4 class="text-xl font-semibold mb-2 text-gray-800">Smart Analytics</h4>
+          <p class="text-gray-600">AI analyzes your spending and provides personalized insights.</p>
+        </div>
+        <div class="feature-card bg-gray-50 p-6 rounded-lg transition duration-300">
+          <div class="text-4xl mb-4 text-indigo-600">📱</div>
+          <h4 class="text-xl font-semibold mb-2 text-gray-800">Mobile Sync</h4>
+          <p class="text-gray-600">Seamlessly sync across devices with real-time updates.</p>
+        </div>
+        <div class="feature-card bg-gray-50 p-6 rounded-lg transition duration-300">
+          <div class="text-4xl mb-4 text-indigo-600">🔒</div>
+          <h4 class="text-xl font-semibold mb-2 text-gray-800">Secure & Private</h4>
+          <p class="text-gray-600">Bank-level encryption keeps your financial data safe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">How SmartSpend Works</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="step">1</div>
+          <h4 class="text-xl font-semibold mb-2 text-gray-800">Connect Accounts</h4>
+          <p class="text-gray-600">Securely link your bank accounts and cards.</p>
+        </div>
+        <div class="text-center">
+          <div class="step">2</div>
+          <h4 class="text-xl font-semibold mb-2 text-gray-800">AI Analyzes</h4>
+          <p class="text-gray-600">Our AI categorizes expenses and finds savings.</p>
+        </div>
+        <div class="text-center">
+          <div class="step">3</div>
+          <h4 class="text-xl font-semibold mb-2 text-gray-800">Achieve Goals</h4>
+          <p class="text-gray-600">Set and track savings goals with progress reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Savings Calculator -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Try Our Savings Calculator</h3>
+      <div class="max-w-md mx-auto bg-gray-50 p-6 rounded-lg">
+        <label class="block mb-2 text-gray-700">Monthly Income ($)</label>
+        <input type="number" id="income" class="w-full p-2 border rounded mb-4"/>
+        <label class="block mb-2 text-gray-700">Monthly Expenses ($)</label>
+        <input type="number" id="expenses" class="w-full p-2 border rounded mb-4"/>
+        <button id="calculateBtn" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">Calculate Savings</button>
+        <p id="result" class="mt-4 text-lg font-semibold text-green-600"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="hero-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-4">Ready to SmartSpend?</h3>
+      <p class="text-xl mb-8">Join thousands already saving more and stressing less.</p>
+      <a href="signup.html" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Start Your Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2023 SmartSpend. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Terms</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
